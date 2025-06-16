@@ -19,7 +19,6 @@
         section {
             justify-content: center;
             background-color: white;
-      
             padding: 32px;
             border-radius: 16px;
             width: 400px;
@@ -35,6 +34,13 @@
             color: #fff;
             text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7, 0 0 40px #00fff7;
         }
+        /* Increase the size of the textbox and its text */
+        input[type="text"] {
+        width: 300px;      /* Set desired width */
+        height: 40px;      /* Set desired height */
+        font-size: 18px;   /* Set font size for text inside */
+        padding: 8px;      /* Optional: add padding for better appearance */
+        }
     </style>
 </head>
 <body>
@@ -46,11 +52,11 @@
         <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br><br>
         <label for="admin">Admin:</label>
-            <input type="radio" id="admin" name="admin" value="admin"><br><br>
+            <input type="radio" id="admin" name="role" value="admin"><br><br>
         <label for="nurse">Nurse:</label>
-            <input type="radio" id="nurse" name="nurse" value="nurse"><br><br>
+            <input type="radio" id="nurse" name="role" value="nurse"><br><br>
         <label for="socialworker">Social Worker:</label>
-            <input type="radio" id="socialworker" name="socialworker" value="socialworker"><br><br>
+            <input type="radio" id="socialworker" name="role" value="socialworker"><br><br>
         <button type="button" style="background-color: rgb(1, 183, 255); color: rgb(5, 5, 5);" onclick="
             const username = document.getElementById('username').value.trim();
             const password = document.getElementById('password').value.trim();

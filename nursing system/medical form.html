@@ -50,12 +50,43 @@
             box-sizing: border-box;
             background: #f7feff;
         }
-        input[type="radio"], input[type="checkbox"] {
-            width: auto;
-            margin-right: 8px;
-        }
-        
-    </style>
+    prompt input[type="text"] {
+        width: 300px; /* Set desired width */
+        height: 40px; /* Set desired height */
+        font-size: 18px; /* Set font size for text inside */
+        padding: 8px; /* Optional: add padding for better appearance */
+    }
+    prompt .nav-links {
+    margin-top: 16px;
+    text-align: center;
+    }
+
+    prompt .nav-links a {
+    color: #0078d4;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 16px;
+    }
+
+    prompt .nav-links a:hover {
+    text-decoration: underline;
+    }
+</style>
+    <!-- ...existing code... -->
+    <prompt>
+    <!-- Your form fields here -->
+    <input type="text" placeholder="Username or Email" />
+    <input type="password" placeholder="Password" />
+    <button type="submit">Login</button>
+
+    <!-- Navigation links below the form fields -->
+    <div class="nav-links">
+        <a href="/register">Register</a>
+        <span> | </span>
+        <a href="/login">Login</a>
+    </div>
+    </prompt>
+<!-- ...existing code... -->
     <form>
         <section>
             <h1 class="login-title">Child Basic Information</h1>
